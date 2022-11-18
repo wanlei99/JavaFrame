@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c8f311b-e935-4665-b9ed-abc03bd79de3" name="Default" comment="" />
+    <list default="true" id="0c8f311b-e935-4665-b9ed-abc03bd79de3" name="Default" comment="删除无用文件" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -942,8 +942,16 @@
       <workItem from="1515489313928" duration="875000" />
       <workItem from="1516608956542" duration="49000" />
       <workItem from="1668737171050" duration="1341000" />
-      <workItem from="1668739102386" duration="311000" />
+      <workItem from="1668739102386" duration="695000" />
     </task>
+    <task id="LOCAL-00001" summary="删除无用文件">
+      <created>1668739712237</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668739712237</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1025,6 +1033,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="删除无用文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除无用文件" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
