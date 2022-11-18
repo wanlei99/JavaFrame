@@ -1,11 +1,7 @@
 package com.fuzhu.utils;
 
-import com.fuzhu.entity.Student;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.poi.hssf.usermodel.*;
 
-import javax.swing.*;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;

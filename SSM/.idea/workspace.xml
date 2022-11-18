@@ -9,7 +9,98 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c8f311b-e935-4665-b9ed-abc03bd79de3" name="Default" comment="删除无用文件" />
+    <list default="true" id="0c8f311b-e935-4665-b9ed-abc03bd79de3" name="Default" comment="删除无用文件">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/controller/AjaxController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/controller/BackstageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/controller/GagController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/controller/GoodController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/controller/ScoreController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fuzhu/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/dao/GagDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/dao/GoodClassifyDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/dao/GoodDetailsDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/dao/LuceneDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/dao/ScoreDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/entity/CfMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/entity/Gag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/entity/GoodClassify.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/entity/GoodDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/entity/Score.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/entity/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/service/GagService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/service/GoodService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/service/ParseExcel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/service/ScoreService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/serviceImpl/GagServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/serviceImpl/GoodServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/serviceImpl/ParseExcelImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/serviceImpl/ScoreServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/test/RankTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/utils/ExportBeanExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fuzhu/utils/ExportBeanExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/utils/GoodDetailsUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/utils/PoiExportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fuzhu/utils/PoiExportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/utils/message/MessageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/utils/message/MessageServiceFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/utils/message/MessageServiceSupport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fuzhu/utils/message/MessageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GagMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GoodClassifyMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GoodDetailsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ScoreMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/doExcel.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/success.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/testajax.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM/WEB-INF/classes/com/fuzhu/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM/WEB-INF/classes/com/fuzhu/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM/WEB-INF/classes/com/fuzhu/utils/ExportBeanExcel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM/WEB-INF/classes/com/fuzhu/utils/ExportBeanExcel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSM/WEB-INF/classes/com/fuzhu/utils/PoiExportTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSM/WEB-INF/classes/com/fuzhu/utils/PoiExportTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/controller/AjaxController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/controller/BackstageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/controller/GagController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/controller/GoodController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/controller/ScoreController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/controller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fuzhu/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/dao/GagDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/dao/GoodClassifyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/dao/GoodDetailsDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/dao/LuceneDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/dao/ScoreDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/entity/CfMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/entity/Gag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/entity/GoodClassify.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/entity/GoodDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/entity/Score.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/entity/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/service/GagService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/service/GoodService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/service/ParseExcel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/service/ScoreService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/serviceImpl/GagServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/serviceImpl/GoodServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/serviceImpl/ParseExcelImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/serviceImpl/ScoreServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/test/GoodIndexAdd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/test/LuceneTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/test/LuceneUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/test/MyBatisTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/test/RankTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/test/TestLuceneIndex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/utils/ExportBeanExcel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fuzhu/utils/ExportBeanExcel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/utils/GoodDetailsUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/utils/PoiExportTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fuzhu/utils/PoiExportTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/utils/message/MessageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/utils/message/MessageServiceFactory$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/utils/message/MessageServiceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/utils/message/MessageServiceSupport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fuzhu/utils/message/MessageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/GagMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/GoodClassifyMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/GoodDetailsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ScoreMapper.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -802,7 +893,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.73" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.73" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SSM_war/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SSM_war/backend/loginPage" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -942,7 +1033,7 @@
       <workItem from="1515489313928" duration="875000" />
       <workItem from="1516608956542" duration="49000" />
       <workItem from="1668737171050" duration="1341000" />
-      <workItem from="1668739102386" duration="695000" />
+      <workItem from="1668739102386" duration="1515000" />
     </task>
     <task id="LOCAL-00001" summary="删除无用文件">
       <created>1668739712237</created>

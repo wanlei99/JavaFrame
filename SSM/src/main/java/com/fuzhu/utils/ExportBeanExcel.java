@@ -13,7 +13,6 @@ import java.lang.reflect.Method;
 import java.util.*;
 
 
-import com.fuzhu.entity.Student;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.usermodel.HSSFRow;
@@ -135,38 +134,6 @@ public class ExportBeanExcel<T> {
             System.out.println("导出失败!");
             e.printStackTrace();
         }
-    }
-    public static void main(String [] args){
-        List<String> headerId = new ArrayList<>();
-        Field[] fields = Student.class.getDeclaredFields();
-        int i = 0;
-        while(i<fields.length) {
-            Field field = fields[i];
-            String fieldName = field.getName();//属性名
-            System.out.println(fieldName.toString());
-            headerId.add(fieldName);
-            i++;
-        }
-        System.out.println(headerId.toString());
-
-
-//        List<String> listName = new ArrayList<>();
-//        listName.add("id");
-//        listName.add("名字");
-//        listName.add("性别");
-//        List<String> listId = new ArrayList<>();
-//        listId.add("id");
-//        listId.add("name");
-//        listId.add("sex");
-//        List<Student> list = new ArrayList<>();
-//        list.add(new Student(111,"张三asdf","男"));
-//        list.add(new Student(111,"李四asd","男"));
-//        list.add(new Student(111,"王五","女"));
-//
-//
-//        ExportBeanExcel<Student> exportBeanExcelUtil = new ExportBeanExcel();
-//        exportBeanExcelUtil.exportExcel("测试POI导出EXCEL文档",listName,listId,list);
-
     }
 }
 
