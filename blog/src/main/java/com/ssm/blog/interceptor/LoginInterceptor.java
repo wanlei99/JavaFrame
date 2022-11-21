@@ -1,4 +1,4 @@
-package com.liuyanzhao.ssm.blog.interceptor;
+package com.ssm.blog.interceptor;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.ModelAndView;

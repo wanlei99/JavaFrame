@@ -1,4 +1,4 @@
-package com.fuzhu.entity;
+package com.train.entity;
 
 import lombok.Data;
 

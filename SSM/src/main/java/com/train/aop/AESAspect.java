@@ -1,10 +1,8 @@
-package com.fuzhu.aop;
+package com.train.aop;
 
-import com.fuzhu.entity.User;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
-import org.springframework.util.DigestUtils;
 
 
 /**
@@ -14,7 +12,7 @@ import org.springframework.util.DigestUtils;
 @Aspect
 public class AESAspect {
 
-    @Before(value = "execution(public * com.fuzhu.controller.*.*(..))" )
+    @Before(value = "execution(public * com.train.controller.*.*(..))" )
     public void beforeShow(JoinPoint jp) {
         String className = jp.getThis().toString();
         String methodName = jp.getSignature().getName();

@@ -1,9 +1,8 @@
-package com.fuzhu.service.impl;
+package com.train.service.impl;
 
-import com.fuzhu.entity.User;
-import com.fuzhu.service.UserService;
-
-import java.util.List;
+import com.train.dao.UserDao;
+import com.train.entity.User;
+import com.train.service.UserService;
 
 /**
  * @author wanlei
@@ -11,9 +10,15 @@ import java.util.List;
  */
 public class UserServiceImpl implements UserService {
 
-    @Override
-    public User login(String account) {
-        return null;
+    private UserDao userDao;
+
+    public UserServiceImpl(UserDao userDao) {
+        this.userDao = userDao;
     }
 
+    @Override
+    public Integer insertUser(User user) {
+        Integer insertResult = userDao.insertUser(user);
+        return insertResult;
+    }
 }

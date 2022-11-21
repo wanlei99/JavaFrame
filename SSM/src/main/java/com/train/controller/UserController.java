@@ -1,4 +1,4 @@
-package com.fuzhu.controller;
+package com.train.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

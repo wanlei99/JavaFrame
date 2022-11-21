@@ -66,7 +66,7 @@
                         <a href="" class="nav-link">Become Tutor</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/user/login" class="btn btn-primary">Sign Up</a>
+                        <a href="/ssm_blog/user/login" class="btn btn-primary">Sign Up</a>
                     </li>
                 </ul>
             </div> <!-- .navbar-collapse -->
