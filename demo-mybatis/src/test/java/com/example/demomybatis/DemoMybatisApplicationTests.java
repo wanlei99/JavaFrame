@@ -3,6 +3,7 @@ package com.example.demomybatis;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
+import com.example.demomybatis.domain.dto.UserAccountDto;
 import com.example.demomybatis.domain.entity.User;
 import com.example.demomybatis.domain.entity.UserAccount;
 import com.example.demomybatis.mapper.UserAccountMapper;
@@ -14,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @SpringBootTest
 class DemoMybatisApplicationTests {
@@ -70,5 +72,12 @@ class DemoMybatisApplicationTests {
         QueryWrapper<UserAccount> accountQueryWrapper = new QueryWrapper<>();
         accountQueryWrapper.eq("account", "admin1");
         userAccountService.remove(accountQueryWrapper);
+    }
+    @Test
+    void testSelect() {
+        List<UserAccountDto> userList = accountMapper.selectAccountByUserId("1");
+        for (UserAccountDto user : userList) {
+            System.out.println(user.toString());
+        }
     }
 }

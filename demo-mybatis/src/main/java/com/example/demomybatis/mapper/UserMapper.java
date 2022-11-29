@@ -1,8 +1,11 @@
 package com.example.demomybatis.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.example.demomybatis.domain.dto.UserDto;
 import com.example.demomybatis.domain.entity.User;
 import org.apache.ibatis.annotations.Mapper;
+
+import java.util.List;
 
 /**
  * @author wanlei
