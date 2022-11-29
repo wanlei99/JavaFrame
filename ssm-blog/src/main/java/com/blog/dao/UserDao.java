@@ -14,4 +14,7 @@ import java.util.List;
 public interface UserDao {
     @Select("Select * from user")
     public List<User> findUserAll();
+
+    @Select("Select * from user where user_name = #{userName} and user_pass = #{password}")
+    public User userLogin(String userName, String password);
 }
