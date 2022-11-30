@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0949323-44c6-455f-ac15-6e48631f3a8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/domain/dto/UserAccountDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/domain/dto/UserDto.java" afterDir="false" />
+    <list default="true" id="e0949323-44c6-455f-ac15-6e48631f3a8c" name="Changes" comment="添加根据userid联合查询userName">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/config/MybatisPlusConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/mapper/UserAccountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/mapper/UserAccountMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demomybatis/DemoMybatisApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demomybatis/DemoMybatisApplicationTests.java" afterDir="false" />
     </list>
@@ -40,6 +39,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
         <option name="userSettingsFile" value="D:\Tools\maven\apache-maven-3.8.4\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -60,10 +60,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../WEB/vue-admin-better" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="JUnit.DemoMybatisApplicationTests.testSelect">
+  <component name="RunManager" selected="JUnit.DemoMybatisApplicationTests.page">
     <configuration name="DemoMybatisApplicationTests.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-mybatis" />
       <extension name="coverage">
@@ -75,6 +75,38 @@
       <option name="PACKAGE_NAME" value="com.example.demomybatis" />
       <option name="MAIN_CLASS_NAME" value="com.example.demomybatis.DemoMybatisApplicationTests" />
       <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoMybatisApplicationTests.lambda" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demomybatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demomybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demomybatis.DemoMybatisApplicationTests" />
+      <option name="METHOD_NAME" value="lambda" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoMybatisApplicationTests.page" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demomybatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demomybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demomybatis.DemoMybatisApplicationTests" />
+      <option name="METHOD_NAME" value="page" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -96,22 +128,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoMybatisApplicationTests.testMapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-mybatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demomybatis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demomybatis" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demomybatis.DemoMybatisApplicationTests" />
-      <option name="METHOD_NAME" value="testMapper" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoMybatisApplicationTests.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-mybatis" />
       <extension name="coverage">
@@ -128,22 +144,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoMybatisApplicationTests.testService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-mybatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demomybatis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demomybatis" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demomybatis.DemoMybatisApplicationTests" />
-      <option name="METHOD_NAME" value="testService" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoMybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo-mybatis" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demomybatis.DemoMybatisApplication" />
@@ -153,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoMybatisApplicationTests.page" />
+        <item itemvalue="JUnit.DemoMybatisApplicationTests.lambda" />
         <item itemvalue="JUnit.DemoMybatisApplicationTests.testSelect" />
         <item itemvalue="JUnit.DemoMybatisApplicationTests.delete" />
         <item itemvalue="JUnit.DemoMybatisApplicationTests.testAddAccount" />
-        <item itemvalue="JUnit.DemoMybatisApplicationTests.testService" />
-        <item itemvalue="JUnit.DemoMybatisApplicationTests.testMapper" />
       </list>
     </recent_temporary>
   </component>
@@ -172,8 +172,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669690789694</updated>
-      <workItem from="1669690791595" duration="17857000" />
+      <workItem from="1669690791595" duration="18312000" />
+      <workItem from="1669770480306" duration="6068000" />
     </task>
+    <task id="LOCAL-00001" summary="添加根据userid联合查询userName">
+      <created>1669716170134</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669716170134</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +198,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加根据userid联合查询userName" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加根据userid联合查询userName" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

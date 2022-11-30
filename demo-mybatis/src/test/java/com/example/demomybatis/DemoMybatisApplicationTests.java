@@ -1,8 +1,12 @@
 package com.example.demomybatis;
 
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.demomybatis.domain.dto.UserAccountDto;
 import com.example.demomybatis.domain.entity.User;
 import com.example.demomybatis.domain.entity.UserAccount;
@@ -79,5 +83,21 @@ class DemoMybatisApplicationTests {
         for (UserAccountDto user : userList) {
             System.out.println(user.toString());
         }
+    }
+    @Test
+    void lambda() {
+        LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<User>().eq(User::getId,"1");
+        User user = userMapper.selectOne(wrapper);
+        System.out.println(user.toString());
+    }
+    @Test
+    void page() {
+        LambdaQueryWrapper<User> queryWrapper = Wrappers.lambdaQuery();
+
+        Page<User> userPage = new Page<>(1,2);
+        IPage<User> userIPage = userMapper.selectPage(userPage, queryWrapper);
+        System.out.println("总页数："+userIPage.getPages());
+        System.out.println("总记录数："+userIPage.getTotal());
+        userIPage.getRecords().forEach(System.out::println);
     }
 }
