@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0949323-44c6-455f-ac15-6e48631f3a8c" name="Changes" comment="新增分页查询功能">
+    <list default="true" id="e0949323-44c6-455f-ac15-6e48631f3a8c" name="Changes" comment="新增分页查询接口">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/config/MyMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/domain/entity/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/mapper/UserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/service/UserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/service/impl/UserRoleImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demomybatis/DemoMybatisApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demomybatis/DemoMybatisApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +68,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoMybatisApplication">
+  <component name="RunManager" selected="JUnit.DemoMybatisApplicationTests.selectRoleName">
     <configuration name="DemoMybatisApplicationTests.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-mybatis" />
       <extension name="coverage">
@@ -113,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoMybatisApplicationTests.testAddAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DemoMybatisApplicationTests.selectRoleName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-mybatis" />
       <extension name="coverage">
         <pattern>
@@ -123,7 +127,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.demomybatis" />
       <option name="MAIN_CLASS_NAME" value="com.example.demomybatis.DemoMybatisApplicationTests" />
-      <option name="METHOD_NAME" value="testAddAccount" />
+      <option name="METHOD_NAME" value="selectRoleName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoMybatisApplicationTests.selectRoleName" />
         <item itemvalue="JUnit.DemoMybatisApplicationTests.page" />
         <item itemvalue="JUnit.DemoMybatisApplicationTests.lambda" />
         <item itemvalue="JUnit.DemoMybatisApplicationTests.testSelect" />
         <item itemvalue="JUnit.DemoMybatisApplicationTests.delete" />
-        <item itemvalue="JUnit.DemoMybatisApplicationTests.testAddAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +179,7 @@
       <updated>1669690789694</updated>
       <workItem from="1669690791595" duration="18312000" />
       <workItem from="1669770480306" duration="14729000" />
-      <workItem from="1669857797718" duration="607000" />
+      <workItem from="1669857797718" duration="8202000" />
     </task>
     <task id="LOCAL-00001" summary="添加根据userid联合查询userName">
       <created>1669716170134</created>
@@ -191,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669789665110</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="新增分页查询接口">
+      <created>1669858447860</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669858447860</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +223,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加根据userid联合查询userName" />
     <MESSAGE value="新增分页查询功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增分页查询功能" />
+    <MESSAGE value="新增分页查询接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增分页查询接口" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

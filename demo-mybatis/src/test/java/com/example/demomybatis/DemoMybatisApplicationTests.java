@@ -10,9 +10,11 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.demomybatis.domain.dto.UserAccountDto;
 import com.example.demomybatis.domain.entity.User;
 import com.example.demomybatis.domain.entity.UserAccount;
+import com.example.demomybatis.domain.entity.UserRole;
 import com.example.demomybatis.mapper.UserAccountMapper;
 import com.example.demomybatis.mapper.UserMapper;
 import com.example.demomybatis.service.UserAccountService;
+import com.example.demomybatis.service.UserRoleService;
 import com.example.demomybatis.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +34,8 @@ class DemoMybatisApplicationTests {
     UserAccountService userAccountService;
     @Resource
     UserService userService;
-
+    @Resource
+    UserRoleService userRoleService;
     @Test
     void contextLoads() {
     }
@@ -99,5 +102,10 @@ class DemoMybatisApplicationTests {
         System.out.println("总页数："+userIPage.getPages());
         System.out.println("总记录数："+userIPage.getTotal());
         userIPage.getRecords().forEach(System.out::println);
+    }
+    @Test
+    void selectRoleName() {
+        UserRole userRole = userRoleService.selectUserRoleName(Long.valueOf(7));
+        System.out.println(userRole.toString());
     }
 }
