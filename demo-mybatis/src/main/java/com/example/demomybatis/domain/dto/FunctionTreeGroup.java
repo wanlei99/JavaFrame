@@ -16,6 +16,7 @@ public class FunctionTreeGroup{
     private String functionName;
     private Integer level;
     private Long parentId;
+    private Long projectId;
     private boolean hasChildNode;
     private List<FunctionTreeGroup> childrenNode;
 
@@ -23,6 +24,7 @@ public class FunctionTreeGroup{
         this.functionId = function.getFunctionId();
         this.functionName = function.getFunctionName();
         this.level = function.getLevel();
+        this.projectId = function.getProjectId();
         if (function.getParentId() != null) {
             this.parentId = function.getParentId();
         }

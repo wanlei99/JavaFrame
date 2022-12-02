@@ -11,7 +11,7 @@ import java.util.List;
  * @since 2022/12/2
  */
 public interface FunctionService extends IService<Function> {
-    public List getFunctionTreeByProjectId(Long projectId);
+    public List getFunctionTreeByProjectId(Long projectId,Long parentId);
 
-    List<FunctionTreeGroup> buildFunctionTree(Long Id);
+    List<FunctionTreeGroup> buildFunctionTree(Long Id,Long parentId);
 }

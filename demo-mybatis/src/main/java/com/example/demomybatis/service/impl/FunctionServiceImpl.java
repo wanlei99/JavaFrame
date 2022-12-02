@@ -30,17 +30,21 @@ public class FunctionServiceImpl extends ServiceImpl<FunctionMapper, Function> i
      * @return
      */
     @Override
-    public List getFunctionTreeByProjectId(Long projectId) {
+    public List getFunctionTreeByProjectId(Long projectId,Long parentId) {
         // 构建查询条件
-        QueryWrapper<Function> queryWrapper = new QueryWrapper<Function>().eq("project_id", projectId)
-                .isNull("parent_id");
+        QueryWrapper<Function> queryWrapper = new QueryWrapper<Function>().eq("project_id", projectId);
+        if (parentId == null) {
+            queryWrapper.isNull("parent_id");
+        } else {
+            queryWrapper.eq("parent_id", parentId);
+        }
         List<Function> functionList = functionMapper.selectList(queryWrapper);
         List<FunctionTreeGroup> resultList = new ArrayList<>();
         if (!CollectionUtils.isEmpty(functionList)) {
             functionList.forEach(function -> {
                 FunctionTreeGroup treeGroup = new FunctionTreeGroup(function);
                 resultList.add(treeGroup);
-                List<FunctionTreeGroup> list = buildFunctionTree(function.getFunctionId());
+                List<FunctionTreeGroup> list = buildFunctionTree(function.getFunctionId(),projectId);
                 if (CollectionUtils.isEmpty(list)) {
                     treeGroup.setHasChildNode(false);
                 } else {
@@ -58,18 +62,23 @@ public class FunctionServiceImpl extends ServiceImpl<FunctionMapper, Function> i
      * @return
      */
     @Override
-    public List<FunctionTreeGroup> buildFunctionTree(Long parentId) {
+    public List<FunctionTreeGroup> buildFunctionTree(Long parentId,Long projectId) {
         // 构建查询条件
         QueryWrapper<Function> queryWrapper = new QueryWrapper<>();
         List<FunctionTreeGroup> functionTreeGroups = new ArrayList<>();
         // 根据parentId查询数据信息
-        queryWrapper.eq("parent_id", parentId);
+        if (parentId == null) {
+            queryWrapper.isNull("parent_id");
+        } else {
+            queryWrapper.eq("parent_id", parentId);
+        }
+        queryWrapper.eq("project_id", projectId);
         List<Function> functionList = functionMapper.selectList(queryWrapper);
         if (!CollectionUtils.isEmpty(functionList)) {
             functionList.forEach(function -> {
                 FunctionTreeGroup treeGroup = new FunctionTreeGroup(function);
                 functionTreeGroups.add(treeGroup);
-                List<FunctionTreeGroup> childrenTreeList = buildFunctionTree(treeGroup.getFunctionId());
+                List<FunctionTreeGroup> childrenTreeList = buildFunctionTree(treeGroup.getFunctionId(),projectId);
                 if (CollectionUtils.isEmpty(childrenTreeList)) {
                     treeGroup.setHasChildNode(false);
                 } else {

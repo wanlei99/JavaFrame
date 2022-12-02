@@ -20,11 +20,11 @@ public class FunctionController {
     private FunctionService functionService;
 
     @PostMapping("/tree")
-    public List buildTree(@Param("projectId") Long projectId) {
-        return functionService.getFunctionTreeByProjectId(projectId);
+    public List buildTree(@Param("projectId") Long projectId, @Param("parentId") Long parentId) {
+        return functionService.getFunctionTreeByProjectId(projectId,parentId);
     }
     @PostMapping("/treeById")
     public List buildTreeById(@Param("projectId") Long projectId) {
-        return functionService.buildFunctionTree(projectId);
+        return functionService.buildFunctionTree(projectId,null);
     }
 }
