@@ -4,15 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0949323-44c6-455f-ac15-6e48631f3a8c" name="Changes" comment="新增分页查询接口">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/config/MyMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/domain/entity/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/mapper/UserRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/service/UserRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/service/impl/UserRoleImpl.java" afterDir="false" />
+    <list default="true" id="e0949323-44c6-455f-ac15-6e48631f3a8c" name="Changes" comment="设置拦截器">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/controller/FunctionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/domain/dto/FunctionTreeGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/domain/entity/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/mapper/FunctionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/service/FunctionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demomybatis/service/impl/FunctionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-web/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-web/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-web/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-web/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-web/src/main/java/com/example/demoweb/DemoWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-web/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-web/src/test/java/com/example/demoweb/DemoWebApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../music-website" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demomybatis/DemoMybatisApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demomybatis/DemoMybatisApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +66,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -66,10 +76,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="JUnit.DemoMybatisApplicationTests.selectRoleName">
-    <configuration name="DemoMybatisApplicationTests.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.DemoMybatisApplication">
+    <configuration name="DemoMybatisApplicationTests.buildTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-mybatis" />
       <extension name="coverage">
         <pattern>
@@ -79,7 +90,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.demomybatis" />
       <option name="MAIN_CLASS_NAME" value="com.example.demomybatis.DemoMybatisApplicationTests" />
-      <option name="METHOD_NAME" value="delete" />
+      <option name="METHOD_NAME" value="buildTree" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -117,6 +128,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoMybatisApplicationTests.select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demomybatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demomybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demomybatis.DemoMybatisApplicationTests" />
+      <option name="METHOD_NAME" value="select" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoMybatisApplicationTests.selectRoleName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-mybatis" />
       <extension name="coverage">
@@ -133,22 +160,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoMybatisApplicationTests.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-mybatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demomybatis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demomybatis" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demomybatis.DemoMybatisApplicationTests" />
-      <option name="METHOD_NAME" value="testSelect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoMybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo-mybatis" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demomybatis.DemoMybatisApplication" />
@@ -158,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoMybatisApplicationTests.select" />
+        <item itemvalue="JUnit.DemoMybatisApplicationTests.buildTree" />
         <item itemvalue="JUnit.DemoMybatisApplicationTests.selectRoleName" />
         <item itemvalue="JUnit.DemoMybatisApplicationTests.page" />
         <item itemvalue="JUnit.DemoMybatisApplicationTests.lambda" />
-        <item itemvalue="JUnit.DemoMybatisApplicationTests.testSelect" />
-        <item itemvalue="JUnit.DemoMybatisApplicationTests.delete" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +190,8 @@
       <updated>1669690789694</updated>
       <workItem from="1669690791595" duration="18312000" />
       <workItem from="1669770480306" duration="14729000" />
-      <workItem from="1669857797718" duration="8202000" />
+      <workItem from="1669857797718" duration="23126000" />
+      <workItem from="1669946521615" duration="9774000" />
     </task>
     <task id="LOCAL-00001" summary="添加根据userid联合查询userName">
       <created>1669716170134</created>
@@ -202,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669858447860</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="设置拦截器">
+      <created>1669872643617</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669872643617</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,10 +240,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="添加根据userid联合查询userName" />
     <MESSAGE value="新增分页查询功能" />
     <MESSAGE value="新增分页查询接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增分页查询接口" />
+    <MESSAGE value="设置拦截器" />
+    <option name="LAST_COMMIT_MESSAGE" value="设置拦截器" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -8,11 +8,13 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.demomybatis.domain.dto.UserAccountDto;
+import com.example.demomybatis.domain.entity.Function;
 import com.example.demomybatis.domain.entity.User;
 import com.example.demomybatis.domain.entity.UserAccount;
 import com.example.demomybatis.domain.entity.UserRole;
 import com.example.demomybatis.mapper.UserAccountMapper;
 import com.example.demomybatis.mapper.UserMapper;
+import com.example.demomybatis.service.FunctionService;
 import com.example.demomybatis.service.UserAccountService;
 import com.example.demomybatis.service.UserRoleService;
 import com.example.demomybatis.service.UserService;
@@ -36,6 +38,8 @@ class DemoMybatisApplicationTests {
     UserService userService;
     @Resource
     UserRoleService userRoleService;
+    @Resource
+    FunctionService functionService;
     @Test
     void contextLoads() {
     }
@@ -107,5 +111,18 @@ class DemoMybatisApplicationTests {
     void selectRoleName() {
         UserRole userRole = userRoleService.selectUserRoleName(Long.valueOf(7));
         System.out.println(userRole.toString());
+    }
+    @Test
+    void select() {
+        QueryWrapper<Function> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("project_id", Long.valueOf(1001))
+                .isNull("parent_id");
+        List<Function> functionList = functionService.list(queryWrapper);
+        System.out.println(functionList);
+    }
+    @Test
+    void buildTree() {
+        List treeList = functionService.getFunctionTreeByProjectId(Long.valueOf(1001));
+        System.out.println(treeList);
     }
 }
